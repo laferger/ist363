@@ -1,0 +1,11 @@
+// custom variable values
+$primary: purple;
+$light: #fbf5e5;
+
+// ^^ why are we doing this above?  because it needs to happen 
+// before the _variables.scss file so the default in that file doesn't get used 
+
+
+// import bootstrap
+@import '../../bootstrap-5.3.3-dist/scss/bootstrap';
+
