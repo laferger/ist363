@@ -3,18 +3,17 @@ const students = [
   {suid: 234567, name: 'Ella Vader', year: 'junior', major: 'Information Management and Technology'}, 
   {suid: 345678, name: 'Chris P Bacon', year: 'junior', major: 'Innovation, Society and Technology'}
 ];
-let filteredStudents = students;
- 
- const handleChange = (event) => {
-    filteredStudents = students.filter(student => student.name == event.target.value);
-    };
+
+function MyFunction () {
+  console.log("hello world");
+}
+
 
 function App() {
-  
+  const filteredStudents = students.filter(student => student.name == "Sue Flay");
   return (
     <div>
-    <label htmlFor="search">Search: </label>
-      <input id="search" type="text" onChange={handleChange} />
+      <button onClick={MyFunction}>Click Here to Console Log</button>
       <h1>Students</h1>
       <ul>
         {
@@ -27,7 +26,7 @@ function App() {
         })}
       </ul>
     </div>
-      );
-    };  
+  );
+  }
 
 export default App;
